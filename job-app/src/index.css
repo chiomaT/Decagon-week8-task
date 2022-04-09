@@ -5,13 +5,13 @@
 }
 
 body {
-  background: #0F4A7B;
+  /* background: #0F4A7B; */
 }
 
 .container {
-  margin-top: 5rem;
+  /* margin-top: 2rem; */
   width: 1000px;
-  height: 700px;
+  height: 1000px;
   left: 0px;
   top: 0px;
   background: #F9FBFD;
@@ -70,6 +70,7 @@ body {
   text-align: start;
 }
 
+.container #employment,
 .Application-Form input {
   width: 100%;
   height: 50px;
@@ -79,15 +80,20 @@ body {
   border: 0.5px solid #0F4A7B;
   box-sizing: border-box;
   border-radius: 10px;
-  /* Inside auto layout */
   flex: none;
   order: 1;
   flex-grow: 0;
   margin: 12px 0px;
 }
 
+.container #employment,
+input[type="tel"],
+input[type="location"],
+input[type="email"],
 input[type="text"] {
-  font-size: 80px !important;
+  font-size: 20px !important;
+  padding: 0 40px;
+  font-weight: lighter;
 }
 
 .Application-Form .Application-btn {
@@ -97,9 +103,51 @@ input[type="text"] {
   color: #FFFFFF;
 }
 
+.container .upload {
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: #FFFFFF;
+  border: 1px solid #0F4A7B;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 60px;
+  color: #0F4A7B;
+}
+
+.upload img {
+  width: 60px;
+}
+
+.upload .cv-files {
+  background: #0F4A7B;
+  position: absolute;
+  left: 47%;
+  padding: 10px;
+}
+
+.upload .cv-files a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.upload .cv-files a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.upload .cv-options {
+  padding-bottom: 10px;
+}
+
+.upload .cv-upload {
+  
+}
+
 @media screen and (max-width: 768px) {
   .container {
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     width: 400px;
     height: 700px;
   }
