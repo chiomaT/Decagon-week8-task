@@ -1,5 +1,6 @@
 import React from 'react';
-// import ApplicationForm from './Components/ApplicationForm'
+import ApplicationForm from './Components/ApplicationForm'
+import JobApplications from "./Components/JobCreationForm"
 import './App.css';
 import Header from './Components/Admin/Header';
 import Input from './Components/Admin/Input';
@@ -14,6 +15,9 @@ function App() {
       <Input />
       <Container />
       <Footer />
+      <ApplicationForm />
+      <JobApplications />
+
     </div>
   );
 }
