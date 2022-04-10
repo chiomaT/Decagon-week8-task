@@ -1,19 +1,31 @@
-import React, { Component } from 'react';
+import React from 'react';
+import ApplicationForm from './Components/ApplicationForm';
+// import "./App.css";
+import CompanyLoginPage from './Components/login-folder/CompanyLogin';
+import React from 'react';
+import ApplicationForm from './Components/ApplicationForm';
+import JobApplications from './Components/JobCreationForm';
 import './App.css';
 import NavBar from './user-components/NavBar/NavBar';
-import Header from './user-components/Header/Header';
 import Body from './user-components/Body/Body';
+import Header from './Components/Admin/Header';
+import Input from './Components/Admin/Input';
+import Container from './Components/Admin/Container';
+import Footer from './Components/Admin/Footer';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <NavBar />
-        <Header />
-        <Body />
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div className="App">
+      <NavBar />
+      <Header />
+      <Body />
+      <Input />
+      <Container />
+      <Footer />
+      <ApplicationForm />
+      <JobApplications />
+    </div>
+  );
 }
 
 export default App;
