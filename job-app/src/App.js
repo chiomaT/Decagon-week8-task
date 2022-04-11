@@ -1,11 +1,13 @@
 import React from 'react';
 import ApplicationForm from './Components/ApplicationForm'
-import './App.css';
+import Employer from './Components/Employer/Employerjs';
+// import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <ApplicationForm />
+      {/* <ApplicationForm /> */}
+      <Employer />
     </div>
   );
 }
