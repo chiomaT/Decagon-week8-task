@@ -219,7 +219,7 @@ input[type="text"] {
 }
 .footer {
   background: #06061ff5;
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   display: flex;
   width: 100%;
@@ -312,7 +312,27 @@ input[type="text"] {
 }
 
 @media screen and (max-width: 768px) {
-  .headerComponent {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    width: 65%;
+    /* background-color: red; */
+    margin: 0px;
+    padding: 0px;
+  }
+  .footer-icons {
+    display: flex;
+    flex-direction: column;
     
+  }
+  .fa-facebook-f {
+    color: white;
+  }
+  .fa-twitter {
+    color: white;
+  }
+  footer > .fa-instagram-square {
+    color: white;
   }
 }
