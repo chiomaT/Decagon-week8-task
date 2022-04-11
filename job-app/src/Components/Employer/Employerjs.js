@@ -78,7 +78,7 @@ const Employer = () => {
           </div>{/*phone  */}
 
           <div class ="already-have-acct">
-            <h4>Already have an ccount? <a href = "#">Login</a></h4>
+            <h4>Already have an account? <a href = "#">Login</a></h4>
         </div>
           </div>{/*form-first-section  */}
         
