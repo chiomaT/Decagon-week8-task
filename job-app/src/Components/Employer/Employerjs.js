@@ -17,7 +17,7 @@ const Employer = () => {
         <div className="aside">
           <h1>Company representative</h1>
           <p>
-            This is information partaining to you as a representative of the
+            This information is partaining to you as<br /> a representative of the
             company
           </p>
           </div>{/*aside  */}
