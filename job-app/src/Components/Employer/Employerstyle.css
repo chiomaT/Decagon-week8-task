@@ -1,0 +1,8 @@
+.form-title {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.employer-entire-page {
+    background-color:red;
+}
