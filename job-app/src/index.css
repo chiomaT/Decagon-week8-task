@@ -29,7 +29,7 @@ body {
   height: 22px;
   left: 0px;
   top: 0px;
-  font-family: 'Gilroy ☞';
+  font-family: "Gilroy ☞";
   font-size: 16px;
   line-height: 35px;
   letter-spacing: 0.12em;
@@ -62,7 +62,7 @@ body {
   height: 22px;
   left: 0px;
   top: 0px;
-  font-family: 'Gilroy ☞';
+  font-family: "Gilroy ☞";
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.12em;
@@ -87,10 +87,10 @@ body {
 }
 
 .container #employment,
-input[type='tel'],
-input[type='location'],
-input[type='email'],
-input[type='text'] {
+input[type="tel"],
+input[type="location"],
+input[type="email"],
+input[type="text"] {
   font-size: 20px !important;
   padding: 0 40px;
   font-weight: lighter;
@@ -198,7 +198,7 @@ body {
   height: 22px;
   left: 0px;
   top: 0px;
-  font-family: 'Gilroy ☞';
+  font-family: "Gilroy ☞";
   font-size: 16px;
   line-height: 35px;
   letter-spacing: 0.12em;
@@ -231,7 +231,7 @@ body {
   height: 22px;
   left: 0px;
   top: 0px;
-  font-family: 'Gilroy ☞';
+  font-family: "Gilroy ☞";
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.12em;
@@ -256,10 +256,10 @@ body {
 }
 
 .container #employment,
-input[type='tel'],
-input[type='location'],
-input[type='email'],
-input[type='text'] {
+input[type="tel"],
+input[type="location"],
+input[type="email"],
+input[type="text"] {
   font-size: 80px;
   font-size: 20px !important;
   padding: 0 40px;
