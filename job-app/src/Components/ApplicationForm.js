@@ -1,14 +1,13 @@
 import React from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro'
+import Imgg from "../Images/upload icon.png"
 
 const application = () => {
   return (
     <div className="container">
       <form className="Application-Form">
-      <div className="form-delete">
-        <p className="form-actions">X</p>
-      </div>
+        <div className="form-delete">
+          <p className="form-actions">X</p>
+        </div>
         <div className="form-header">
           <h1 className="title">
             Front End Developer
@@ -24,8 +23,15 @@ const application = () => {
         <label for="Location">Location</label>
         <input className="location" type="text" />
         <label for="Phone Number">Phone Number</label>
-        <input className="phoneNumber" type="phone" />
-        <div />
+        <input className="phoneNumber" type="tel" />
+        <div className = "upload">
+          <img src={Imgg} alt="upload image"></img>
+          <p className="cv-content">Drag and drop your CV here</p>
+          <p className="cv-option">or</p>
+          <div className="cv-files">
+          <p className="cv-upload"><a href=''>Browse Files</a></p>
+          </div>
+        </div>
         <input className="Application-btn" type="submit" value="Submit Application" />
       </form>
     </div>
