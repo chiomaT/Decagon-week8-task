@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +16,7 @@ body {
   height: 1000px;
   left: 0px;
   top: 0px;
-  background: #F9FBFD;
+  background: #f9fbfd;
   border-radius: 10px;
   display: flex;
   margin: auto;
@@ -29,11 +31,11 @@ body {
   height: 22px;
   left: 0px;
   top: 0px;
-  font-family: 'Gilroy ☞';
+  font-family: "Gilroy ☞";
   font-size: 16px;
   line-height: 35px;
   letter-spacing: 0.12em;
-  color: #0F4A7B;
+  color: #0f4a7b;
   text-align: start;
   margin-bottom: 4rem;
 }
@@ -62,11 +64,11 @@ body {
   height: 22px;
   left: 0px;
   top: 0px;
-  font-family: 'Gilroy ☞';
+  font-family: "Gilroy ☞";
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.12em;
-  color: #0F4A7B;
+  color: #0f4a7b;
   text-align: start;
 }
 
@@ -76,8 +78,8 @@ body {
   height: 50px;
   left: 0px;
   top: 34px;
-  background: #FFFFFF;
-  border: 0.5px solid #0F4A7B;
+  background: #ffffff;
+  border: 0.5px solid #0f4a7b;
   box-sizing: border-box;
   border-radius: 10px;
   flex: none;
@@ -98,9 +100,9 @@ input[type="text"] {
 
 .Application-Form .Application-btn {
   font-size: 18px !important;
-  background: #0F4A7B;
+  background: #0f4a7b;
   padding: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .container .upload {
@@ -108,12 +110,12 @@ input[type="text"] {
   right: 0%;
   top: 0%;
   bottom: 0%;
-  background: #FFFFFF;
-  border: 1px solid #0F4A7B;
+  background: #ffffff;
+  border: 1px solid #0f4a7b;
   box-sizing: border-box;
   border-radius: 10px;
   padding: 60px;
-  color: #0F4A7B;
+  color: #0f4a7b;
 }
 
 .upload img {
@@ -121,7 +123,7 @@ input[type="text"] {
 }
 
 .upload .cv-files {
-  background: #0F4A7B;
+  background: #0f4a7b;
   position: absolute;
   left: 47%;
   padding: 10px;
@@ -142,7 +144,6 @@ input[type="text"] {
 }
 
 .upload .cv-upload {
-  
 }
 
 @media screen and (max-width: 768px) {
@@ -162,8 +163,10 @@ input[type="text"] {
     height: 22px;
     padding-bottom: 4rem;
   }
-  
+
   .container .form-actions {
     margin-left: 350px;
   }
 }
+
+
