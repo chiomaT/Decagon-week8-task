@@ -1,7 +1,8 @@
 import React from 'react';
-import Imgg from "../Images/upload icon.png"
+import Imgg from "../Images/upload icon.png";
 
 const application = () => {
+
   return (
     <div className="container">
       <form className="Application-Form">
