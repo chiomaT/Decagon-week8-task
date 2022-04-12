@@ -1,0 +1,94 @@
+/*login page styling*/
+.interview-section {
+    background-color: #06061ff5;
+    padding-left: 60px;
+    height: 100vh;
+  }
+
+  /* company log styling */
+  .company-logo{
+      padding-top:40px;
+  }
+  
+  /* log in interview section styling */
+ .interview-title {
+    color: #e5e5e5;
+    margin-top: 90px;
+  }
+  .login-title {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+  
+  /* login form styling */
+  .login {
+    color: #06061ff5;
+    background-color: #e5e5e5;
+    height: 100vh;
+    padding-left: 50px;
+    width:100%;
+  }
+  
+  /* button styling */
+  .login-btn {
+    height: 50px;
+    width: 150px;
+    background-color: #5e8b09;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 30px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .login-btn:hover{
+      background-color: #06061ff5;
+      color: #e5e5e5;
+      transition: 1s;
+  }
+  /* log in form styling */
+  input[type="text"] {
+    width: 60%;
+    height: 10px;
+    border-radius: 5px;
+    border: none;
+    padding: 20px 20px;
+    font-size: 16px;
+  }
+  
+.email {
+    font-size: 10px;
+  }
+  .circleflex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .circle-img {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  #password-section{
+     margin-top:30px;
+  }
+ /* media queries */
+ @media only screen and (max-width:320px) {
+    .log-in-container {
+       display:grid;
+       grid-template-rows: repeat(2, 1fr);
+     
+    }
+ }
+     
+ @media only screen and (min-width:920px) {
+   .log-in-container {
+       display:grid;
+       grid-template-columns: 60% 40%;
+   }
+      
+ }
+
+
+
+  
