@@ -1,22 +1,28 @@
 import React from "react";
+import "./Employerstyle.css";
+
 const Employer = () => {
   return (
     <div className="employer-entire-page">
       <div className="form-title">
+        <div id ="title">
         <h1>Create an employer account</h1>
-        <p>Reach top talent and find the right candidate today!</p>
-      </div>
+        </div>
+        <div id = "title-paragraph">
+        <h4>Reach top talent and find the right candidate today!</h4>
+        </div>
+        </div>{/*form-title  */}
 
       <div className="form-container">
         <div className="aside">
           <h1>Company representative</h1>
           <p>
-            This is information partaining to you as a representative of the
+            This information is partaining to you as<br /> a representative of the
             company
           </p>
-        </div>
+          </div>{/*aside  */}
 
-        <div class="form-first-section">
+        <div className="form-first-section">
             <div id ="fname">
             <input
             className="firstName"
@@ -24,7 +30,7 @@ const Employer = () => {
             name="firstname"
             placeholder="First Name"
           />
-            </div>
+            </div>{/*fname  */}
           <div id ="lname">
           <input
             className="firstName"
@@ -32,7 +38,7 @@ const Employer = () => {
             name="firstname"
             placeholder="Last Name"
           />
-          </div>
+          </div>{/*lname  */}
           <div id = "work-e">
           <input
             className="firstName"
@@ -40,7 +46,7 @@ const Employer = () => {
             name="firstname"
             placeholder="Work email"
           />
-          </div>
+          </div>{/*work-e  */}
           <div id ="password">
           <input
             className="firstName"
@@ -48,22 +54,37 @@ const Employer = () => {
             name="firstname"
             placeholder="Create password"
           />
-          </div>
+          </div>{/*password  */}
          <div id ="position">
-         <label for="Location">Position in company</label>
-          <input className="location" type="text" />
-         </div>
+           <div id = "select-position">
+           <label for="position">Position in company</label>
+           <select id="position" name ="position">
+           <option value="select-position">Select position</option>
+          <option value="director">Director</option>
+         <option value="ceo">CEO</option>
+         <option value="manager">Manager</option>
+         <option value="marketer">Marketer</option>
+           </select>
+           </div>
+         
+         </div>{/*position  */}
           <div id ="phone">
-          <label for="Location">Phone number</label>
+            <div id ="number">
+            <label for="Location">Phone number</label>
+            </div>
+          <div>
           <input className="location" type="text" />
           </div>
-         
+          </div>{/*phone  */}
+
+          <div class ="already-have-acct">
+            <h4>Already have an account? <a href = "#">Login</a></h4>
         </div>
-        <div class ="already-have-acct">
-            <h4>Already have an ccount? <a href = "#">Login</a></h4>
-        </div>
-      </div>
-    </div>
+          </div>{/*form-first-section  */}
+        
+        </div>{/*form-container */}
+        </div> 
+   
   );
 };
 export default Employer;
