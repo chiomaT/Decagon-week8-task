@@ -1,12 +1,6 @@
-
 import React, { useEffect } from 'react';
-
 import Employer from './Components/Employer/Employerjs';
-import React from "react";
 import './App.css';
-import Header from './Components/Admin/Header';
-import Input from './Components/Admin/Input';
-import Container from './Components/Admin/Container';
 import Footer from './Components/Admin/Footer';
 import LoginAndSignUp from './Components/Admin/Login';
 import CompanyLoginPage from "./Components/login-folder/CompanyLogin";
@@ -33,7 +27,6 @@ function App() {
       <Footer />
       <ApplicationForm />
       <JobApplications />
-
     </div>
   );
 }
