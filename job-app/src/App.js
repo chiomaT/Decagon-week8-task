@@ -1,13 +1,11 @@
-
-
 import React, { useEffect } from 'react';
-
 import Employer from './Components/Employer/Employerjs';
-import React from "react";
+import './App.css';
+import Footer from './Components/Admin/Footer';
+import LoginAndSignUp from './Components/Admin/Login';
 import CompanyLoginPage from "./Components/login-folder/CompanyLogin";
 import ApplicationForm from "./Components/ApplicationForm";
 import JobApplications from "./Components/JobCreationForm";
-import "./App.css";
 import NavBar from "./user-components/NavBar/NavBar";
 import Body from "./user-components/Body/Body";
 import Header from "./Components/Admin/Header";
@@ -18,6 +16,7 @@ import Footer from "./Components/Admin/Footer";
 function App() {
   return (
     <div className="App">
+      <LoginAndSignUp />
       <Employer />
       <CompanyLoginPage />
       <NavBar />
