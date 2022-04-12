@@ -1,4 +1,5 @@
 import React from 'react';
+import "./JobApp.css"
 
 const jobApplications = () => {
   return (
@@ -21,19 +22,19 @@ const jobApplications = () => {
         <input className="email" type="text" />
         <label for="Location">What type of employement is it?</label>
         <select name="cars" id="employment">
-          <option value="Empty"></option>
+          <option value="Empty">Select</option>
           <option value="Full Time">Full Time</option>
           <option value="Part Time">Part Time</option>
           <option value="Remote">Remote</option>
           <option value="Contract">Contract</option>
         </select>
         <label for="Salary range">Salary range</label>
-        <input className="phoneNumber" type="tel" />
+        <input className="phoneNumber" type="text" />
         <label for="Submission deadline">Submission deadline</label>
-        <input className="phoneNumber" type="tel" />
+        <input className="phoneNumber" type="text" />
         <label for="Submission deadline">What Sector is this job categorized under?</label>
         <select name="cars" id="employment">
-          <option value="Empty"></option>
+          <option value="Empty">Select</option>
           <option value="Advertising and marketing">Advertising and marketing</option>
           <option value="Aerospace">Aerospace</option>
           <option value="Agriculture">Agriculture</option>
@@ -53,6 +54,8 @@ const jobApplications = () => {
           <option value="Telecommunication">Telecommunication</option>
           <option value="Transportation">Transportation</option>
         </select>
+        <label for="Submission deadline">Job Description</label><br />
+        <textarea className="phoneNumber" className="textarea" type="text" style={{width: "100%", height: "30%"}} />
         <input className="Application-btn" type="submit" value="Submit Application" />
       </form>
     </div>
