@@ -16,10 +16,7 @@ import Footer from "./Components/Admin/Footer";
 function App() {
   return (
     <div className="App">
-
-
       <LoginAndSignUp />
-
       <Employer />
       <CompanyLoginPage />
       <NavBar />
