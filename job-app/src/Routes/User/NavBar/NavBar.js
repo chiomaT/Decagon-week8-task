@@ -3,6 +3,7 @@ import { Button } from './Button';
 import { MenuItems } from './MenuItems';
 import './NavBar.css';
 import logo from '../logo/FindJobs.svg';
+import { Link } from 'react-router-dom';
 
 class NavBar extends Component {
   state = {
@@ -31,7 +32,9 @@ class NavBar extends Component {
             );
           })}
         </ul>
-        <Button>Sign Up</Button>
+        <Link to="/user/post_job">
+          <Button>Post Job</Button>
+        </Link>
       </nav>
     );
   }

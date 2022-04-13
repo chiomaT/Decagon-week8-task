@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Card, Button } from 'react-bootstrap';
 import ReactMarkdown from 'react-markdown';
-import './Content.css';
 import Modal from './Modal';
+import './Content.css';
 
 export default function Job({ job }) {
   const [openModal, setOpenModal] = useState(false);
@@ -19,14 +19,10 @@ export default function Job({ job }) {
               </Card.Subtitle>
               <Card.Subtitle className="location">
                 <i className="fa fa-location-arrow" aria-hidden="true"></i>{' '}
-                {job.country}
+                {job.location}
               </Card.Subtitle>
-              <div>
-                <ReactMarkdown children={job.links} />
-                <Card.Text>
-                  This should take a line or two about the job, while the full
-                  detail is rendered on the modal.
-                </Card.Text>
+              <div style={{ wordBreak: 'break-all' }}>
+                <Card.Link href={job.link}>{job.link}</Card.Link>
               </div>
             </div>
             <span className="text-muted price">{job.pages}</span>
@@ -42,7 +38,7 @@ export default function Job({ job }) {
             </Button>
           </Card.Text>
           <div>
-            <ReactMarkdown children={job.description} />
+            <ReactMarkdown source={job.description} />
           </div>
         </Card.Body>
       </Card>

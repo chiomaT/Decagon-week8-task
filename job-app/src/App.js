@@ -1,35 +1,18 @@
+import React, { Component } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import './App.css';
+import CompanyLoginPage from './Routes/Login/CompanyLogin';
+import User from './Routes/User/User';
+import JobCreationForm from './Routes/Form/JobCreationForm';
 
-
-import React, { useEffect } from 'react';
-
-import Employer from './Components/Employer/Employerjs';
-import React from "react";
-import CompanyLoginPage from "./Components/login-folder/CompanyLogin";
-import ApplicationForm from "./Components/ApplicationForm";
-import JobApplications from "./Components/JobCreationForm";
-import "./App.css";
-import NavBar from "./user-components/NavBar/NavBar";
-import Body from "./user-components/Body/Body";
-import Header from "./Components/Admin/Header";
-import Input from "./Components/Admin/Input";
-import Container from "./Components/Admin/Container";
-import Footer from "./Components/Admin/Footer";
-
-function App() {
-  return (
-    <div className="App">
-      <Employer />
-      <CompanyLoginPage />
-      <NavBar />
-      <Header />
-      <Body />
-      <Input />
-      <Container />
-      <Footer />
-      <ApplicationForm />
-      <JobApplications />
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <Routes>
+        <Route path="/" element={<CompanyLoginPage />} />
+        <Route path="/user" element={<User />} />
+        <Route path="/user/post_job" element={<JobCreationForm />} />
+      </Routes>
+    );
+  }
 }
-
-export default App;

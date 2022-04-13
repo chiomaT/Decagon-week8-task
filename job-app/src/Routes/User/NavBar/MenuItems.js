@@ -21,7 +21,7 @@ export const MenuItems = [
   },
   {
     title: 'Post Job',
-    url: '#',
+    url: '/user/post_job',
     className: 'nav-links-mobile',
   },
 ];

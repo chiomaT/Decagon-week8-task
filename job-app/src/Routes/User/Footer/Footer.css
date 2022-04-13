@@ -51,29 +51,21 @@
   flex-direction: row;
   margin-right: 30px;
   padding: 2rem;
-  letter-spacing: 30px;
   font-size: 20px;
   cursor: pointer;
-  justify-content: space-between;
 }
 
 .fa-instagram {
   color: #fff;
   padding: 5px;
   transition: 0.2s;
+  background-color: #3f3f49b4;
+  width: 30px;
+  margin-right: 20px;
+  border-radius: 14px;
 }
 .fa-instagram:hover {
   color: #ff0000;
-  transition: 0.2s;
-}
-
-.fa-facebook {
-  color: #fff;
-  padding: 5px;
-  transition: 0.2s;
-}
-.fa-facebook:hover {
-  color: #0000ff;
   transition: 0.2s;
 }
 
@@ -81,8 +73,25 @@
   color: #fff;
   padding: 5px;
   transition: 0.2s;
+  background-color: #3f3f49b4;
+  width: 30px;
+  margin-right: 20px;
+  border-radius: 14px;
 }
 .fa-twitter:hover {
   color: #0ca1f1;
+  transition: 0.2s;
+}
+
+.fa-facebook {
+  color: #fff;
+  padding: 5px;
+  transition: 0.2s;
+  background-color: #3f3f49b4;
+  width: 30px;
+  border-radius: 14px;
+}
+.fa-facebook:hover {
+  color: #0000ff;
   transition: 0.2s;
 }

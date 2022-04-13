@@ -8,7 +8,7 @@ const ACTIONS = {
   UPDATE_HAS_NEXT_PAGE: 'update-has-next-page',
 };
 
-// const BASE_URL = 'http://insertURLHere' Edit her to API
+// const BASE_URL = 'http://insertURLHere' Edit here to API
 const BASE_URL = './Data.json';
 
 function reducer(state, action) {
@@ -45,9 +45,9 @@ export default function useGetJobs(params, page) {
       .then((res) => {
         dispatch({ type: ACTIONS.GET_DATA, payload: { jobs: res.data } });
       })
-      .catch((err) => {
-        if (axios.isCancel(err)) return;
-        dispatch({ type: ACTIONS.ERROR, payload: { error: err } });
+      .catch((e) => {
+        if (axios.isCancel(e)) return;
+        dispatch({ type: ACTIONS.ERROR, payload: { error: e } });
       });
 
     const cancelToken2 = axios.CancelToken.source();
@@ -62,9 +62,9 @@ export default function useGetJobs(params, page) {
           payload: { hasNextPage: res.data.length !== 0 },
         });
       })
-      .catch((err) => {
-        if (axios.isCancel(err)) return;
-        dispatch({ type: ACTIONS.ERROR, payload: { error: err } });
+      .catch((e) => {
+        if (axios.isCancel(e)) return;
+        dispatch({ type: ACTIONS.ERROR, payload: { error: e } });
       });
 
     return () => {
