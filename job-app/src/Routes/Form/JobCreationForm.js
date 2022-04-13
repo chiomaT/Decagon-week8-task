@@ -76,6 +76,13 @@ const jobApplications = () => {
           <option value="Telecommunication">Telecommunication</option>
           <option value="Transportation">Transportation</option>
         </select>
+        <label for="Submission deadline">Job Description</label>
+        <br />
+        <textarea
+          className="phoneNumber textarea"
+          type="text"
+          style={{ width: '100%', height: '30%' }}
+        />
         <input
           className="post-job-btn"
           type="submit"
