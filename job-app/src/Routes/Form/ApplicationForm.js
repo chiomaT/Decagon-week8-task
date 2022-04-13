@@ -1,5 +1,6 @@
 import React from 'react';
 import Imgg from "../Images/upload icon.png";
+import "./JobApp.css"
 
 const application = () => {
 
