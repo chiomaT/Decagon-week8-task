@@ -1,5 +1,6 @@
 import React from 'react';
 import { Form, Col, Row } from 'react-bootstrap';
+import './Content.css';
 
 export default function SearchForm({ params, onParamChange }) {
   return (
