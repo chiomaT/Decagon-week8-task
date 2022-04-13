@@ -63,6 +63,11 @@ export default function CompanyLoginPage() {
               Login
             </button>
           </Link>
+          <Link to="/user">
+            <button className="login-btn" type="button">
+              Login
+            </button>
+          </Link>
         </div>
       </div>{' '}
     </div>
