@@ -8,8 +8,8 @@ const ACTIONS = {
   UPDATE_HAS_NEXT_PAGE: 'update-has-next-page',
 };
 
-// const BASE_URL = 'http://insertURLHere' Edit here to API
-const BASE_URL = './Data.json';
+const BASE_URL = 'http://localhost:3200/postJobs/createjobs'
+// const BASE_URL = './Data.json';
 
 function reducer(state, action) {
   switch (action.type) {
