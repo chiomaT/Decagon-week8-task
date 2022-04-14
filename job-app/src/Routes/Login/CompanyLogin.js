@@ -2,7 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Pic from '../../Images/FindJobs.png';
 import Pictwo from '../../Images/interviewlogo.png';
-import './CompanyLogin.css';
+import Circleone from '../../Images/Ellipse 2.png';
+import Circletwo from '../../Images/Ellipse 3.png';
+import Circlethree from '../../Images/Ellipse 4.png';
+import './login.css';
 
 export default function CompanyLoginPage() {
   return (
@@ -32,9 +35,15 @@ export default function CompanyLoginPage() {
           <div class="circleflex">
             <div className="none"></div>
             <div className="circle-img">
-              <div className="blue-circle"> </div>
-              <div className="red-circle"></div>
-              <div className="pink-circle"></div>
+              <div className="blue-circle">
+                <img src={Circleone} alt="circle" />
+              </div>
+              <div className="red-circle">
+                <img src={Circletwo} alt="circle" />
+              </div>
+              <div className="pink-circle">
+                <img src={Circlethree} alt="circle" />
+              </div>
             </div>
           </div>{' '}
           <h1 className="login-title">Login</h1>
@@ -58,16 +67,18 @@ export default function CompanyLoginPage() {
               <input className="Password" id="user-password" type="text" />
             </div>
           </div>
-          <Link to="/user">
-            <button className="login-btn" type="button">
-              Login
-            </button>
-          </Link>
-          <Link to="/user">
-            <button className="sign-up-btn" type="button">
-              Sign Up
-            </button>
-          </Link>
+          <div className="login-signup">
+            <Link to="/user">
+              <button className="login-btn" type="button">
+                Login
+              </button>
+            </Link>
+            <Link to="/user">
+              <button className="signup-btn" type="button">
+                Sign up
+              </button>
+            </Link>
+          </div>
         </div>
       </div>{' '}
     </div>
