@@ -1,5 +1,5 @@
 import React from 'react';
-import './Form.css';
+import './JobCreationForm.css';
 import { Link } from 'react-router-dom';
 
 const jobApplications = () => {
@@ -76,8 +76,11 @@ const jobApplications = () => {
           <option value="Telecommunication">Telecommunication</option>
           <option value="Transportation">Transportation</option>
         </select>
-        <label for="Submission deadline">Job Description</label><br />
-        <textarea className="phoneNumber textarea" type="text" style={{width: "100%", height: "30%"}} />
+        <label className="job-title" for="Submission deadline">
+          Job Description
+        </label>
+        <br />
+        <textarea className="job-description textarea" type="text" />
         <input
           className="post-job-btn"
           type="submit"
