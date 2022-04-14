@@ -1,9 +1,10 @@
+
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Form.css';
 import { Link } from 'react-router-dom';
 
-function JobApplications(){
+function JobApplications() {
 
   const getTitle = (e) => {
     setJobTitle(e.target.value);
