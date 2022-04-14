@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './Form.css';
+import './JobCreationForm.css';
 import { Link } from 'react-router-dom';
 
 function JobApplications() {
@@ -50,14 +50,14 @@ function JobApplications() {
 
   const data = {
     jobTitle,
-  companyName: company,
-  location: "SangoTedo",
-  employmentType: "Remote",
-  salary: "$100000",
-  submissionDeadline: "31/4/2022",
-  phoneNumber: "08155018302",
-  sector: "Telecomunication",
-  description: "3 years experience"
+    companyName: company,
+    location: "SangoTedo",
+    employmentType: "Remote",
+    salary: "$100000",
+    submissionDeadline: "31/4/2022",
+    phoneNumber: "08155018302",
+    sector: "Telecomunication",
+    description: "3 years experience"
   }
 
   // useEffect(()=> {
