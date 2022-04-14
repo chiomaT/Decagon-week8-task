@@ -1,7 +1,7 @@
 export const MenuItems = [
   {
     title: 'Jobs',
-    url: '#',
+    url: './user/apply',
     className: 'nav-links',
   },
   {

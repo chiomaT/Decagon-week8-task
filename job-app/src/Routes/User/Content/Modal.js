@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Modal({ closeModal, job }) {
   return (
@@ -11,7 +12,7 @@ export default function Modal({ closeModal, job }) {
         ></i>
 
         <div className="modalTitle">
-          <h1>{job.title}</h1>
+          <h1>{job.jobTitle}</h1>
         </div>
         <div className="modalLocation">
           <p>
@@ -20,7 +21,9 @@ export default function Modal({ closeModal, job }) {
           </p>
         </div>
         <div className="modalBtn">
-          <button className="modalBtn-Btn">Apply Via Find Job</button>
+          <Link to="/user/apply">
+            <button className="modalBtn-Btn">Apply Via Find Job</button>
+          </Link>
         </div>
         <hr />
         <div className="modal-text">{job.description}</div>
