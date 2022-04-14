@@ -5,7 +5,7 @@ import Pictwo from '../../Images/interviewlogo.png';
 import Circleone from '../../Images/Ellipse 2.png';
 import Circletwo from '../../Images/Ellipse 3.png';
 import Circlethree from '../../Images/Ellipse 4.png';
-import './login.css';
+import './CompanyLogin.css';
 
 export default function CompanyLoginPage() {
   return (
