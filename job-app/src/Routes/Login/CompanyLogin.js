@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Pic from '../../Images/FindJobs.png';
 import Pictwo from '../../Images/interviewlogo.png';
-import './login.css';
+import './CompanyLogin.css';
 
 export default function CompanyLoginPage() {
   return (
@@ -64,8 +64,8 @@ export default function CompanyLoginPage() {
             </button>
           </Link>
           <Link to="/user">
-            <button className="login-btn" type="button">
-              Login
+            <button className="sign-up-btn" type="button">
+              Sign Up
             </button>
           </Link>
         </div>

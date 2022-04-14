@@ -74,10 +74,35 @@
   vertical-align: middle;
   transition: 0.3s;
 }
+.sign-up-btn {
+  height: 50px;
+  width: 150px;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  margin-top: 40px;
+  margin-left: 120px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  transition: 0.3s;
+}
 .login-btn:hover {
   background-color: #06061ff5;
   color: #e5e5e5;
   transition: 0.3s;
+}
+.sign-up-btn:hover {
+  color: #db2225f5;
+  transition: 0.3s;
+}
+#e-input {
+  width: 700px;
+}
+#p-input {
+  width: 700px;
 }
 /* log in form styling */
 #user-mail.Email,
