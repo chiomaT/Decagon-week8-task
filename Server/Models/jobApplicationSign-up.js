@@ -1,21 +1,57 @@
 import mongoose from "mongoose";
 
 const appSchema = {
-  firstName: String,
-  lastName: String,
-  email: String,
+  firstName: {
+    type: String,
+    required: true,
+  },
+  lastName: {
+    type: String,
+    required: true,
+  },
+  email: {
+    type: String,
+    required: true,
+  },
   password: String,
   dateOfBirth: {
-    day: String,
-    month: String,
-    year: String
+    day: {
+      type: String,
+      required: true,
+    },
+    month: {
+      type: String,
+      required: true,
+    },
+    year: {
+      type: String,
+      required: true,
+    }
   },
-  gender: String,
-  nationality: String,
-  location: String,
-  countryCode: String,
-  mobileNo: String,
-  createdAt: String
+  gender: {
+    type: String,
+    required: true,
+  },
+  nationality: {
+    type: String,
+    required: true,
+  },
+  location: {
+    type: String,
+    required: true,
+  },
+  countryCode: {
+    type: String,
+    required: true,
+  },
+  mobileNo: {
+    type: String,
+    required: true,
+  },
+  createdAt: {
+    type: String,
+    required: true,
+  },
 }
 
 const appSignUp = 
