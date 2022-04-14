@@ -6,7 +6,7 @@ export const MenuItems = [
   },
   {
     title: 'Company Review',
-    url: '#',
+    url: '/user/employer',
     className: 'nav-links',
   },
   {
