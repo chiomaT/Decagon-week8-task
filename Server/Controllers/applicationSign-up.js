@@ -25,4 +25,4 @@ export const createSignUpData = async (req, res) => {
   } catch (error) {
     console.log(error.message);
   }
-}
+}cl
