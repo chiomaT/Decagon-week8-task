@@ -8,17 +8,21 @@ export default function Job({ job }) {
   const [openModal, setOpenModal] = useState(false);
   return (
     <React.Fragment>
-      {openModal && <Modal closeModal={setOpenModal} key={job.id} job={job} />}
       <Card>
         <Card.Body>
           <div className="d-flex justify-content-between">
             <div>
               <Card.Title>{job.jobTitle}</Card.Title>
               <Card.Subtitle className="text-muted date">
+                <i class="fa fa-lock" aria-hidden="true"></i>{' '}
                 {new Date(job.submissionDeadline).toDateString()}
               </Card.Subtitle>
+              <Card.Subtitle className="company">
+                <i className="fa fa-building" aria-hidden="true"></i>{' '}
+                {job.companyName}
+              </Card.Subtitle>
               <Card.Subtitle className="location">
-                <i className="fa fa-location-arrow" aria-hidden="true"></i>{' '}
+                <i className="fa fa-map-marker" aria-hidden="true"></i>{' '}
                 {job.location}
               </Card.Subtitle>
               <Badge bg="secondary">{job.sector}</Badge>
@@ -33,11 +37,9 @@ export default function Job({ job }) {
           <Card.Text>
             <Button
               className="btn-menu"
-              onClick={() => {
-                setOpenModal(true);
-              }}
+              onClick={() => setOpenModal((prevOpen) => !prevOpen)}
             >
-              See More
+              {openModal ? 'Close' : 'See More'}
             </Button>
           </Card.Text>
           <div>
@@ -45,6 +47,7 @@ export default function Job({ job }) {
           </div>
         </Card.Body>
       </Card>
+      {openModal && <Modal closeModal={setOpenModal} key={job.id} job={job} />}
     </React.Fragment>
   );
 }

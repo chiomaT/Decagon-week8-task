@@ -36,13 +36,13 @@ export default function CompanyLoginPage() {
             <div className="none"></div>
             <div className="circle-img">
               <div className="blue-circle">
-                <img src={Circleone} alt="circle" />
+                <img className="circle-one" src={Circleone} alt="circle" />
               </div>
               <div className="red-circle">
-                <img src={Circletwo} alt="circle" />
+                <img className="circle-two" src={Circletwo} alt="circle" />
               </div>
               <div className="pink-circle">
-                <img src={Circlethree} alt="circle" />
+                <img className="circle-three" src={Circlethree} alt="circle" />
               </div>
             </div>
           </div>{' '}
@@ -73,6 +73,7 @@ export default function CompanyLoginPage() {
                 Login
               </button>
             </Link>
+            <p className="signup-txt">Don't have an account?</p>
             <Link to="/user">
               <button className="signup-btn" type="button">
                 Sign up
