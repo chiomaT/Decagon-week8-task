@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../Image/logo.svg';
 import './Footer.css';
 
@@ -17,6 +18,11 @@ export default function Footer() {
         </h1>
         <p className="findJobsText">FindJobs</p>
         <p className="Terms-condition">T&C</p>
+        <Link className="sign-out" to="/">
+          <p>
+            Sign out <i class="fa fa-sign-out" aria-hidden="true"></i>
+          </p>
+        </Link>
       </div>
       <div className="footer-icons">
         <i class="fa fa-instagram" aria-hidden="true"></i>

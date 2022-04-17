@@ -29,10 +29,21 @@
 }
 .date {
   margin-bottom: -10px;
+  margin-left: 6px;
+}
+.fa-lock {
+  margin-right: 8px;
 }
 .location {
-  margin-top: 15px;
   margin-bottom: 36px;
+  margin-left: 2px;
+  padding: 5px;
+  word-spacing: 6px;
+  font-size: 16px;
+  text-align: left;
+}
+.company {
+  margin-top: 15px;
   padding: 5px;
   word-spacing: 6px;
   font-size: 16px;
@@ -44,6 +55,7 @@
 }
 .price {
   font-size: 18px;
+  font-weight: 600;
   text-align: right;
 }
 .card-text {
@@ -54,6 +66,9 @@
   background: #ea5566;
   margin-left: 75%;
 }
+.loading-page {
+  font-size: 22px;
+}
 .error {
   color: red;
   font-size: 22px;
@@ -63,10 +78,9 @@
 
 .modalBackground {
   width: 550px;
-  height: 100%;
   position: absolute;
+  top: 31%;
   display: flex;
-  height: 1vh;
   justify-content: right;
   align-items: center;
   margin-left: 40%;
