@@ -1,46 +1,55 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import './JobCreationForm.css';
 import { Link } from 'react-router-dom';
 
 function JobApplications() {
+
   const getTitle = (e) => {
     setJobTitle(e.target.value);
   };
+
   const getCompany = (e) => {
     setCompany(e.target.value);
   };
+
   const getLocation = (e) => {
-    const userValue = e.target.value;
-    console.log(userValue);
+    setLocation(e.target.value);
   };
+
   const getSalary = (e) => {
-    const userValue = e.target.value;
-    console.log(userValue);
+    setSalary(e.target.value);
   };
+
   const getEmployType = (e) => {
-    const userValue = e.target.value;
-    console.log(userValue);
+    setEmployer(e.target.value);
   };
+
   const getDate = (e) => {
-    const userValue = e.target.value;
-    console.log(userValue);
+    setDate(e.target.value);
   };
+
   const getCategory = (e) => {
-    const userValue = e.target.value;
-    console.log(userValue);
+    setCategory(e.target.value);
   };
+
   const getDesc = (e) => {
-    const userValue = e.target.value;
-    console.log(userValue);
+    setDesc(e.target.value);
   };
 
   const [jobTitle, setJobTitle] = useState('');
   const [company, setCompany] = useState('');
+  const [location, setLocation] = useState('');
+  const [Salary, setSalary] = useState('');
+  const [employer, setEmployer] = useState('');
+  const [date, setDate] = useState('');
+  const [category, setCategory] = useState('');
+  const [description, setDesc] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:3200/postJobs/postjobs', data).then((info) => {
+    axios.post('http://localhost:3200/postJobs/postjobs', data)
+    .then((info) => {
       console.log(info.data);
     });
   };
@@ -48,23 +57,16 @@ function JobApplications() {
   const data = {
     jobTitle,
     companyName: company,
-    location: 'SangoTedo',
-    employmentType: 'Remote',
-    salary: '$100000',
-    submissionDeadline: '31/4/2022',
-    phoneNumber: '08155018302',
-    sector: 'Telecomunication',
-    description: '3 years experience',
+    location: location,
+    employmentType: employer,
+    salary: Salary,
+    submissionDeadline: date,
+    sector: category,
+    description: description,
   };
 
-  // useEffect(()=> {
-  //   axios.post("http://localhost:3200/postJobs/postjobs", data)
-  //   .then((data) => {
-  //     console.log(data)
-  //   })
-  // },[])
-
   return (
+    
     <div className="post-job-container">
       <form onSubmit={handleSubmit} className="post-job-Form">
         <div className="form-delete">

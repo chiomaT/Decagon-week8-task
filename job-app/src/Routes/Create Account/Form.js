@@ -1,29 +1,31 @@
-import React from "react";
-import "./Form.css";
-import Header from "./Header";
-import Footer from "./Footer";
+import React from 'react';
+import './Form.css';
+import Header from './Header';
+import Footer from './Footer';
 
 const Form = () => {
+  
   return (
     <div>
       <Header />
-      <div class="header-text">
+      <div className="header-text">
         <h2>Create a Job Seeker Account </h2>
         <p>Your new career is one click away</p>
       </div>
-      <div class="contact-form-card">
-        <div class="personalDetails">
+      <div className="contact-form-card">
+        <div className="personalDetails">
           <h3>Personal Information</h3>
           <p>personal details pertaining to your personal account</p>
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <form action="https://">
             <div>
-              <label className="forms">
-                <input type="text" name="firstname" placeholder="First Name" class="inputFirstname" />
+              <label className="forms"
+                <input type="text" name="firstname" placeholder="First Name" className="inputFirstname"
+                onChange={nameChange} />
               </label>
               <label>
-                <input type="text" name="lastname" placeholder="Last Name" class="inputLastname" />
+                <input type="text" name="lastname" placeholder="Last Name" className="inputLastname" />
               </label>
             </div>
             <div>
@@ -31,17 +33,13 @@ const Form = () => {
                 <input type="text" name="email" placeholder="Email" />
               </label>
               <label>
-                <input
-                  type="password"
-                  name=""
-                  placeholder="Password"
-                />
+                <input type="password" name="" placeholder="Password" />
               </label>
             </div>
             <div>
               <label class="">
                 <input
-                  class="date"
+                  className="date"
                   type="date"
                   id="start"
                   name="trip-start"
@@ -49,7 +47,7 @@ const Form = () => {
                   max="2031-12-31"
                 />
               </label>
-              <label class="country">
+              <label className="country">
                 <input type="text" placeholder="country" />
               </label>
             </div>
@@ -58,11 +56,15 @@ const Form = () => {
                 <input type="text" placeholder="Gender" />
               </label>
               <label>
-                <input class="phone_number" type="number" placeholder="Phone-number" />
+                <input
+                  class="phone_number"
+                  type="number"
+                  placeholder="Phone-number"
+                />
               </label>
             </div>
             <div>
-              <div class="custom-select" style="width:200px;">
+              <div className="custom-select" style="width:200px;">
                 <select>
                   <option value="0">Select car:</option>
                   <option value="1">Audi</option>
@@ -88,7 +90,7 @@ const Form = () => {
                 <input type="text" placeholder="Availabiity" />
               </label>
               <label>
-                <input type="button" value="Save" class="formButton" />
+                <input type="button" value="Save" className="formButton" />
               </label>
             </div>
           </form>
@@ -98,4 +100,5 @@ const Form = () => {
     </div>
   );
 };
+
 export default Form;
