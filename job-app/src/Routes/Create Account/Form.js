@@ -1,7 +1,7 @@
-import React from "react";
-import "./Form.css";
-import Header from "./Header";
-import Footer from "./Footer";
+import React from 'react';
+import './Form.css';
+import Header from './Header';
+import Footer from './Footer';
 
 const Form = () => {
   return (
@@ -20,10 +20,20 @@ const Form = () => {
           <form action="https://">
             <div>
               <label className="forms">
-                <input type="text" name="firstname" placeholder="First Name" class="inputFirstname" />
+                <input
+                  type="text"
+                  name="firstname"
+                  placeholder="First Name"
+                  class="inputFirstname"
+                />
               </label>
               <label>
-                <input type="text" name="lastname" placeholder="Last Name" class="inputLastname" />
+                <input
+                  type="text"
+                  name="lastname"
+                  placeholder="Last Name"
+                  class="inputLastname"
+                />
               </label>
             </div>
             <div>
@@ -31,11 +41,7 @@ const Form = () => {
                 <input type="text" name="email" placeholder="Email" />
               </label>
               <label>
-                <input
-                  type="password"
-                  name=""
-                  placeholder="Password"
-                />
+                <input type="password" name="" placeholder="Password" />
               </label>
             </div>
             <div>
@@ -58,11 +64,15 @@ const Form = () => {
                 <input type="text" placeholder="Gender" />
               </label>
               <label>
-                <input class="phone_number" type="number" placeholder="Phone-number" />
+                <input
+                  class="phone_number"
+                  type="number"
+                  placeholder="Phone-number"
+                />
               </label>
             </div>
             <div>
-              <div class="custom-select" style="width:200px;">
+              <div class="custom-select" style={{ width: 200 }}>
                 <select>
                   <option value="0">Select car:</option>
                   <option value="1">Audi</option>
@@ -98,4 +108,5 @@ const Form = () => {
     </div>
   );
 };
+
 export default Form;
