@@ -8,6 +8,7 @@ import Circlethree from '../../Images/Ellipse 4.png';
 import './CompanyLogin.css';
 
 export default function CompanyLoginPage() {
+  
   return (
     <div className="whole-login-page">
       <div className="log-in-container">
