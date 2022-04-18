@@ -1,12 +1,12 @@
 export const MenuItems = [
   {
     title: 'Jobs',
-    url: '#',
+    url: './user/apply',
     className: 'nav-links',
   },
   {
     title: 'Company Review',
-    url: '#',
+    url: '/user/employer',
     className: 'nav-links',
   },
   {

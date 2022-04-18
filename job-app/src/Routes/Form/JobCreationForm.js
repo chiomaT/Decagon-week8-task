@@ -1,11 +1,72 @@
-import React from 'react';
-import './Form.css';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import './JobCreationForm.css';
 import { Link } from 'react-router-dom';
 
-const jobApplications = () => {
+function JobApplications() {
+  const getTitle = (e) => {
+    setJobTitle(e.target.value);
+  };
+  const getCompany = (e) => {
+    setCompany(e.target.value);
+  };
+  const getLocation = (e) => {
+    const userValue = e.target.value;
+    console.log(userValue);
+  };
+  const getSalary = (e) => {
+    const userValue = e.target.value;
+    console.log(userValue);
+  };
+  const getEmployType = (e) => {
+    const userValue = e.target.value;
+    console.log(userValue);
+  };
+  const getDate = (e) => {
+    const userValue = e.target.value;
+    console.log(userValue);
+  };
+  const getCategory = (e) => {
+    const userValue = e.target.value;
+    console.log(userValue);
+  };
+  const getDesc = (e) => {
+    const userValue = e.target.value;
+    console.log(userValue);
+  };
+
+  const [jobTitle, setJobTitle] = useState('');
+  const [company, setCompany] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    axios.post('http://localhost:3200/postJobs/postjobs', data).then((info) => {
+      console.log(info.data);
+    });
+  };
+
+  const data = {
+    jobTitle,
+    companyName: company,
+    location: 'SangoTedo',
+    employmentType: 'Remote',
+    salary: '$100000',
+    submissionDeadline: '31/4/2022',
+    phoneNumber: '08155018302',
+    sector: 'Telecomunication',
+    description: '3 years experience',
+  };
+
+  // useEffect(()=> {
+  //   axios.post("http://localhost:3200/postJobs/postjobs", data)
+  //   .then((data) => {
+  //     console.log(data)
+  //   })
+  // },[])
+
   return (
     <div className="post-job-container">
-      <form className="post-job-Form">
+      <form onSubmit={handleSubmit} className="post-job-Form">
         <div className="form-delete">
           <Link to="../user">
             <i class="fa fa-times" aria-hidden="true"></i>
@@ -21,37 +82,75 @@ const jobApplications = () => {
         <label className="job-title" for="Job Title">
           Job Title
         </label>
-        <input className="job-input job-title-input" type="text" />
+        <input
+          className="job-input job-title-input"
+          value={jobTitle}
+          type="text"
+          onChange={getTitle}
+        />
+
         <label className="job-title" for="Company Name">
           Company Name
         </label>
-        <input className="job-input company-name-input" type="text" />
+        <input
+          className="job-input company-name-input"
+          type="text"
+          value={company}
+          onChange={getCompany}
+        />
+
         <label className="job-title" for="Job Location">
           Location
         </label>
-        <input className="job-input job-location-input" type="text" />
+        <input
+          className="job-input job-location-input"
+          type="text"
+          onChange={getLocation}
+        />
+
         <label className="job-title" for="Job Type">
           What type of employement is it?
         </label>
-        <select className="job-input-select" name="category" id="employment">
+        <select
+          className="job-input-select"
+          name="category"
+          id="employment"
+          onChange={getEmployType}
+        >
           <option value="Empty">Select option</option>
           <option value="Full Time">Full Time</option>
           <option value="Part Time">Part Time</option>
           <option value="Remote">Remote</option>
           <option value="Contract">Contract</option>
         </select>
+
         <label className="job-title" for="Salary range">
           Salary range
         </label>
-        <input className="job-input job-salary-input" type="number" />
+        <input
+          className="job-input job-salary-input"
+          type="number"
+          onChange={getSalary}
+        />
+
         <label className="job-title" for="Submission deadline">
           Submission deadline
         </label>
-        <input className="job-input job-deadline-input" type="date" />
+        <input
+          className="job-input job-deadline-input"
+          type="date"
+          onChange={getDate}
+        />
+
         <label className="job-title" for="Job Category">
           What Sector is this job categorized under?
         </label>
-        <select className="job-input-select" name="category" id="employment">
+        <select
+          className="job-input-select"
+          name="category"
+          id="employment"
+          onChange={getCategory}
+        >
           <option value="Empty">Select option</option>
           <option value="Advertising and marketing">
             Advertising and marketing
@@ -76,8 +175,15 @@ const jobApplications = () => {
           <option value="Telecommunication">Telecommunication</option>
           <option value="Transportation">Transportation</option>
         </select>
-        <label for="Submission deadline">Job Description</label><br />
-        <textarea className="phoneNumber textarea" type="text" style={{width: "100%", height: "30%"}} />
+
+        <label for="Submission deadline">Job Description</label>
+        <br />
+        <textarea
+          className="phoneNumber textarea"
+          type="text"
+          style={{ width: '100%', height: '30%' }}
+          onChange={getDesc}
+        />
         <input
           className="post-job-btn"
           type="submit"
@@ -86,6 +192,6 @@ const jobApplications = () => {
       </form>
     </div>
   );
-};
+}
 
-export default jobApplications;
+export default JobApplications;

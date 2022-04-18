@@ -1,11 +1,11 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Pic from "../../Images/FindJobs.png";
-import Pictwo from "../../Images/interviewlogo.png";
-import Circleone from "../../Images/Ellipse 2.png";
-import Circletwo from "../../Images/Ellipse 3.png";
-import Circlethree from "../../Images/Ellipse 4.png";
-import "./login.css";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Pic from '../../Images/FindJobs.png';
+import Pictwo from '../../Images/interviewlogo.png';
+import Circleone from '../../Images/Ellipse 2.png';
+import Circletwo from '../../Images/Ellipse 3.png';
+import Circlethree from '../../Images/Ellipse 4.png';
+import './CompanyLogin.css';
 
 export default function CompanyLoginPage() {
   return (
@@ -36,16 +36,16 @@ export default function CompanyLoginPage() {
             <div className="none"></div>
             <div className="circle-img">
               <div className="blue-circle">
-                <img src={Circleone} alt="circle" />
+                <img className="circle-one" src={Circleone} alt="circle" />
               </div>
               <div className="red-circle">
-                <img src={Circletwo} alt="circle" />
+                <img className="circle-two" src={Circletwo} alt="circle" />
               </div>
               <div className="pink-circle">
-                <img src={Circlethree} alt="circle"/>
+                <img className="circle-three" src={Circlethree} alt="circle" />
               </div>
             </div>
-          </div>{" "}
+          </div>{' '}
           <h1 className="login-title">Login</h1>
           <div id="email-section">
             <div id="e">
@@ -73,6 +73,7 @@ export default function CompanyLoginPage() {
                 Login
               </button>
             </Link>
+            <p className="signup-txt">Don't have an account?</p>
             <Link to="/user">
               <button className="signup-btn" type="button">
                 Sign up
@@ -80,7 +81,7 @@ export default function CompanyLoginPage() {
             </Link>
           </div>
         </div>
-      </div>{" "}
+      </div>{' '}
     </div>
   );
 }

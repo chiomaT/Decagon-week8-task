@@ -29,14 +29,12 @@ function Body() {
           setPage={setPage}
           hasNextPage={hasNextPage}
         />
-        {loading && <h1>Loading...</h1>}
-        {error ? (
+        {loading && <h1 className="loading-page">Loading...</h1>}
+        {error && (
           <h1 className="error">
             Error :-( <br />
             Please refresh page
           </h1>
-        ) : (
-          <h1 className="data-length">Showing results</h1>
         )}
         {jobs.map((job) => {
           return <Job key={job.id} job={job} />;
