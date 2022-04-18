@@ -1,9 +1,10 @@
 import React from 'react';
 // import Header from './Header';
-import logo from '../../Image/logo.svg';
-import Footer from './Footer'
-import './Admin.css';
-import './Login.css'
+import logo from '../../../Images/FindJobs.png';
+import Footer from '../../../Routes/Admin/Footer'
+// import './Admin.css';
+// import './Login.css'
+import './RecuiterAndEmployer.css'
 const LoginAndSignUp = () => {
     return (
         <div class="loginSignUpContainer">

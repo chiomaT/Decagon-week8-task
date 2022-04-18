@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../Image/logo.svg';
+// import logo from '../../Image/logo.svg';
 const Footer = () => {
   return (
     <div class="footer">
@@ -7,7 +7,7 @@ const Footer = () => {
         <div class="footer-text">
           <img
             class="findjobs"
-            src={logo}
+            // src={logo}
             style={{ width: '5rem' }}
             alt="logo"
           />
