@@ -23,6 +23,12 @@ export default function Footer() {
             Sign out <i class="fa fa-sign-out" aria-hidden="true"></i>
           </p>
         </Link>
+        <Link className="admin-link" to="/user/R_and_E">
+          <p>
+            Recruiter / Employer{' '}
+            <i class="fa fa-briefcase" aria-hidden="true"></i>
+          </p>
+        </Link>
       </div>
       <div className="footer-icons">
         <i class="fa fa-instagram" aria-hidden="true"></i>

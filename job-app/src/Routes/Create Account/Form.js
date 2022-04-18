@@ -1,7 +1,7 @@
-import React from "react";
-import "./Form.css";
-import Header from "./Header";
-import Footer from "./Footer";
+import React from 'react';
+import './Form.css';
+import Header from './Header';
+import Footer from './Footer';
 
 const Form = () => {
   
@@ -20,7 +20,7 @@ const Form = () => {
         <div className="form-group">
           <form action="https://">
             <div>
-              <label className="forms">
+              <label className="forms"
                 <input type="text" name="firstname" placeholder="First Name" className="inputFirstname"
                 onChange={nameChange} />
               </label>
@@ -33,11 +33,7 @@ const Form = () => {
                 <input type="text" name="email" placeholder="Email" />
               </label>
               <label>
-                <input
-                  type="password"
-                  name=""
-                  placeholder="Password"
-                />
+                <input type="password" name="" placeholder="Password" />
               </label>
             </div>
             <div>
@@ -60,7 +56,11 @@ const Form = () => {
                 <input type="text" placeholder="Gender" />
               </label>
               <label>
-                <input className="phone_number" type="number" placeholder="Phone-number" />
+                <input
+                  class="phone_number"
+                  type="number"
+                  placeholder="Phone-number"
+                />
               </label>
             </div>
             <div>
@@ -100,4 +100,5 @@ const Form = () => {
     </div>
   );
 };
+
 export default Form;

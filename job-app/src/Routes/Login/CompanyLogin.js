@@ -75,7 +75,7 @@ export default function CompanyLoginPage() {
               </button>
             </Link>
             <p className="signup-txt">Don't have an account?</p>
-            <Link to="/user">
+            <Link to="/sign_up">
               <button className="signup-btn" type="button">
                 Sign up
               </button>
