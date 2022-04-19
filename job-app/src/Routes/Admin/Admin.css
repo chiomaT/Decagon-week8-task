@@ -1,132 +1,4 @@
-/** {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: #0F4A7B;
-}
-
-.container {
-  margin-top: 5rem;
-  width: 1000px;
-  height: 700px;
-  left: 0px;
-  top: 0px;
-  background: #F9FBFD;
-  border-radius: 10px;
-  display: flex;
-  margin: auto;
-}
-
-.container .form-actions {
-  display: flex;
-}
-
-.form-header {
-  width: 870px;
-  height: 22px;
-  left: 0px;
-  top: 0px;
-  font-family: 'Gilroy ☞';
-  font-size: 16px;
-  line-height: 35px;
-  letter-spacing: 0.12em;
-  color: #0F4A7B;
-  text-align: start;
-  margin-bottom: 4rem;
-}
-
-.container .form-actions {
-  margin-left: 870px;
-}
-
-.container .form-actions:hover {
-  color: red;
-  cursor: pointer;
-}
-
-.Application-Form .form-head {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.Application-Form {
-  width: 870px;
-  margin: auto;
-}
-
-.Application-Form label {
-  width: 108px;
-  height: 22px;
-  left: 0px;
-  top: 0px;
-  font-family: 'Gilroy ☞';
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 0.12em;
-  color: #0F4A7B;
-  text-align: start;
-}
-
-.Application-Form input {
-  width: 100%;
-  height: 50px;
-  left: 0px;
-  top: 34px;
-  background: #FFFFFF;
-  border: 0.5px solid #0F4A7B;
-  box-sizing: border-box;
-  border-radius: 10px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 12px 0px;
-}
-
-input[type="text"] {
-  font-size: 80px !important;
-}
-
-.Application-Form .Application-btn {
-  font-size: 18px !important;
-  background: #0F4A7B;
-  padding: 16px;
-  color: #FFFFFF;
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    margin-top: 3rem;
-    width: 400px;
-    height: 700px;
-  }
-
-  .Application-Form {
-    width: 350px;
-    margin: auto;
-  }
-
-  .form-header {
-    width: 250px;
-    height: 22px;
-    padding-bottom: 4rem;
-  }
-  
-  .container .form-actions {
-    margin-left: 350px;
-  }
-}*/
-
-/* .App { */
-/* background-color: grey; */
-/* } */
-* {
-  margin: 0px;
-  padding: 0px;
-}
-.headerComponent {
+/* .headerComponent {
   display: flex;
   background: #06061ff5;
   margin-left: 4rem;
@@ -136,14 +8,13 @@ input[type="text"] {
 .images {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
 }
 .headerContainer {
   height: 8rem;
   background-color: #06061ff5;
 }
 .jobs {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: italic;
   position: absolute;
   color: white;
@@ -164,7 +35,6 @@ input[type="text"] {
   margin-left: 1rem;
 }
 .search > input {
-  /* width: 100%; */
   width: 200px;
   padding: 10px 40px;
 }
@@ -175,7 +45,7 @@ input[type="text"] {
   top: 10px;
 }
 
-.search > input[type="search"] {
+.search > input[type='search'] {
   margin-left: 1rem;
 }
 
@@ -185,7 +55,6 @@ input[type="text"] {
 }
 .navCircle {
   margin-right: 2rem;
-  /* margin-top: ; */
 }
 .leftNav {
   display: flex;
@@ -202,9 +71,8 @@ input[type="text"] {
 .btn {
   height: 2rem;
   width: 6rem;
-  /* margin-top: 2rem; */
   margin-right: 3rem;
-  background-color: #5e8B09;
+  background-color: #5e8b09;
   color: white;
   text-decoration: none;
   border: none;
@@ -213,8 +81,8 @@ input[type="text"] {
   cursor: pointer;
 }
 .btn:hover {
-    background:#06061ff5;
-    color:white;
+  background: #06061ff5;
+  color: white;
 }
 .footer {
   background: #06061ff5;
@@ -231,12 +99,11 @@ input[type="text"] {
   text-decoration: none;
   border: none;
   color: white;
-  /* padding-top:1rem; */
   cursor: pointer;
-  background-color: #5e8B09;
+  background-color: #5e8b09;
 }
-.search > .btns:hover{
-    background: #06061ff5;
+.search > .btns:hover {
+  background: #06061ff5;
 }
 .btns {
   width: 4rem;
@@ -247,13 +114,11 @@ input[type="text"] {
   flex-direction: row;
   margin-right: 0.5rem;
   padding: 2rem;
-  /* width: 100%; */
 }
 .footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* width: 100%; */
 }
 .fa-copyright {
   color: white;
@@ -270,7 +135,7 @@ input[type="text"] {
   padding-left: 2rem;
   margin-top: 1rem;
   color: white;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: italic;
 }
 .Terms-condition {
@@ -278,7 +143,7 @@ input[type="text"] {
   width: 10%;
   margin-top: 1rem;
   color: white;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: italic;
 }
 .fa-facebook-f {
@@ -300,12 +165,12 @@ input[type="text"] {
   border-radius: 0.4rem;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color:#06061ff5;
-  font-family: "Montserrat";
+  background-color: #06061ff5;
+  font-family: 'Montserrat';
   font-style: italic;
   justify-content: space-between;
   color: white;
 }
 .container_element > p {
   margin: 1.5rem;
-}
+} */

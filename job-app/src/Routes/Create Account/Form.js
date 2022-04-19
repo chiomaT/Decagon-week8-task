@@ -1,13 +1,10 @@
 import React from 'react';
 import './Form.css';
-import Header from './Header';
-import Footer from './Footer';
+import { Link } from 'react-router-dom';
 
 const Form = () => {
-  
   return (
-    <div>
-      <Header />
+    <div className="seeker-container">
       <div className="header-text">
         <h2>Create a Job Seeker Account </h2>
         <p>Your new career is one click away</p>
@@ -20,26 +17,46 @@ const Form = () => {
         <div className="form-group">
           <form action="https://">
             <div>
-              <label className="forms"
-                <input type="text" name="firstname" placeholder="First Name" className="inputFirstname"
-                onChange={nameChange} />
+              <label className="forms">
+                <input
+                  type="text"
+                  name="firstname"
+                  placeholder="First Name"
+                  className="seeker-input seeker-firstname"
+                  // onChange={nameChange}
+                />
               </label>
               <label>
-                <input type="text" name="lastname" placeholder="Last Name" className="inputLastname" />
+                <input
+                  type="text"
+                  name="lastname"
+                  placeholder="Last Name"
+                  className="seeker-input seeker-lastname"
+                />
               </label>
             </div>
             <div>
               <label>
-                <input type="text" name="email" placeholder="Email" />
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="Email"
+                  className="seeker-input seeker-email"
+                />
               </label>
               <label>
-                <input type="password" name="" placeholder="Password" />
+                <input
+                  type="password"
+                  name=""
+                  placeholder="Password"
+                  className="seeker-input seeker-password"
+                />
               </label>
             </div>
             <div>
               <label class="">
                 <input
-                  className="date"
+                  className="seeker-input seeker-date"
                   type="date"
                   id="start"
                   name="trip-start"
@@ -48,55 +65,46 @@ const Form = () => {
                 />
               </label>
               <label className="country">
-                <input type="text" placeholder="country" />
+                <input
+                  type="text"
+                  placeholder="Country"
+                  className="seeker-input seeker-country"
+                />
               </label>
             </div>
             <div>
               <label>
-                <input type="text" placeholder="Gender" />
+                <input
+                  type="gender"
+                  placeholder="Gender"
+                  className="seeker-input seeker-gender"
+                />
               </label>
               <label>
                 <input
-                  class="phone_number"
+                  className="seeker-input seeker-phone-number"
                   type="number"
                   placeholder="Phone-number"
                 />
               </label>
             </div>
             <div>
-              <div className="custom-select" style="width:200px;">
-                <select>
-                  <option value="0">Select car:</option>
-                  <option value="1">Audi</option>
-                  <option value="2">BMW</option>
-                  <option value="3">Citroen</option>
-                  <option value="4">Ford</option>
-                  <option value="5">Honda</option>
-                  <option value="6">Jaguar</option>
-                  <option value="7">Land Rover</option>
-                  <option value="8">Mercedes</option>
-                  <option value="9">Mini</option>
-                  <option value="10">Nissan</option>
-                  <option value="11">Toyota</option>
-                  <option value="12">Volvo</option>
-                </select>
-              </div>
               <label>
-                <input type="text" placeholder="highest qualification" />
+                <input
+                  type="text"
+                  placeholder="Availabiity"
+                  className="seeker-input seeker-availability"
+                />
               </label>
             </div>
-            <div>
+            <Link to="/">
               <label>
-                <input type="text" placeholder="Availabiity" />
+                <input type="button" value="Save" className="seeker-button" />
               </label>
-              <label>
-                <input type="button" value="Save" className="formButton" />
-              </label>
-            </div>
+            </Link>
           </form>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

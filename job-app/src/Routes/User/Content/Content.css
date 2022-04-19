@@ -1,10 +1,13 @@
 /* Jobs.js*/
 
 .container {
-  max-width: 550px;
-  margin-left: 10%;
+  max-width: 620px;
+  margin-left: 8%;
   margin-top: 10%;
   text-align: left;
+  top: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 .card {
   cursor: pointer;
@@ -75,27 +78,24 @@
 }
 
 /* Modal.js */
-
 .modalBackground {
   width: 550px;
-  position: absolute;
-  top: 31%;
-  display: flex;
   justify-content: right;
   align-items: center;
-  margin-left: 40%;
-  margin-top: 23.2%;
+  margin-left: 120%;
 }
 
 .modalContainer {
   width: 500px;
-  height: 630px;
+  position: absolute;
+  height: 610px;
   border-radius: 12px;
   background-color: white;
   box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   padding: 25px;
+  top: 75%;
   cursor: pointer;
 }
 
@@ -144,6 +144,7 @@ hr {
   overflow-x: hidden;
   bottom: 5%;
   font-size: 20px;
+  cursor: default;
 }
 
 /* SearchForm.js */
