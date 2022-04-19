@@ -8,8 +8,8 @@ const ACTIONS = {
   UPDATE_HAS_NEXT_PAGE: 'update-has-next-page',
 };
 
-//const SERVER_ENDPOINT = 'http://localhost:3200/postJobs/createjobs';
-const SERVER_ENDPOINT = './Data.json';
+const SERVER_ENDPOINT = 'http://localhost:3200/postJobs/createjobs';
+//const SERVER_ENDPOINT = './Data.json';
 
 function reducer(state, action) {
   switch (action.type) {
